@@ -222,11 +222,34 @@ footer input[type="text"], footer input[type="email"], footer textarea {
 }
 
 @media screen and (max-width: 576px) {
+    nav,
+    nav ul,
     .skills-container, 
-    .resume-container, 
+    .resume-container,
+    .banner, 
     footer, 
     .about-items {
         flex-direction: column;
+    }
+
+    nav > ul {
+        gap: 20px;
+    }
+
+    .btn-primary {
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        margin: 20px;
+    }
+
+    .banner .banner-profile-pic {
+        width: 100%;
+    }
+
+    .header {
+        background-image: none;
     }
 
     footer, .about {
